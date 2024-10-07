@@ -11,5 +11,4 @@ void setup() {
 
 void loop() {
   mico.update();
-  delay(100);
 }

@@ -25,8 +25,12 @@ void Mico::update() {
     }
 
     if (value != memory[control.index]) {
-      controlChange(MIDI_CHANNEL, control.midino, value);
+      controlChange(MIDI_CHANNEL, control.index, value);
       memory[control.index] = value;
+      /*Serial.print("Send midi ");
+      Serial.print(control.index);
+      Serial.print(" : ");
+      Serial.println(value);*/
     }
   }
 }

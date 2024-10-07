@@ -22,6 +22,18 @@
                 <status>0xB0</status>
                 <midino>0x02</midino>
             </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter3</key>
+                <status>0xB0</status>
+                <midino>0x03</midino>
+            </control>
+            <control>
+                <group>QuickEffectRack1_[Channel1]]</group>
+                <key>super1</key>
+                <status>0xB0</status>
+                <midino>0x02</midino>
+            </control>
         </controls>
     </controller>
 </MixxxMIDIPreset>

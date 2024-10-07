@@ -6,14 +6,15 @@ enum control_type {
 };
 
 struct control_mapping {
-  uint8_t midino;
   enum control_type type;
   uint8_t index;
 };
 
-constexpr struct control_mapping mapping[2]{
-  { 0x01, POTENTIOMETER, 0 },
-  { 0x02, POTENTIOMETER, 1 }
+constexpr struct control_mapping mapping[]{
+  { POTENTIOMETER, 0 },
+  { POTENTIOMETER, 1 },
+  { POTENTIOMETER, 2 },
+  { POTENTIOMETER, 3 }
 };
 
 #define MIDI_CHANNEL 0xB0  // channel 1
