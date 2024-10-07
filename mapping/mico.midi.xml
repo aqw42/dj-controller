@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixxxMIDIPreset schemaVersion="1" mixxxVersion="2.0.0">
+    <info>
+        <name>Mico</name>
+        <author>AQW42</author>
+        <description>MIDI Mapping for Mico</description>
+        <manual>Mico</manual>
+    </info>
+    <controller id="Mico" port="Port">
+        <controls>
+
+            <!-- Mixer -->
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter1</key>
+                <status>0xB0</status>
+                <midino>0x01</midino>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter2</key>
+                <status>0xB0</status>
+                <midino>0x02</midino>
+            </control>
+        </controls>
+    </controller>
+</MixxxMIDIPreset>
