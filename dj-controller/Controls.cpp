@@ -77,7 +77,7 @@ int Controls::potentiometer(index_t index) {
   if (memory[index] > value + 2 || memory[index] < value - 2)
     memory[index] = value;
 
-  return map(memory[index], 0, 1023, 0, 100);
+  return map(memory[index], 0, 1023, 0, 127);
 }
 
 bool Controls::button(index_t index) {

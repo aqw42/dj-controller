@@ -1,15 +1,15 @@
-#include "Midi.h"
+#include <Arduino.h>
 #include "Controls.h"
+#include "Mico.h"
 
-Controls control;
+Mico mico;
 
 void setup() {
   Serial.begin(115200);
-  control.begin();
+  mico.begin();
 }
 
 void loop() {
-  Serial.println(control.potentiometer(0));
-  Serial.println(control.potentiometer(1));
+  mico.update();
   delay(100);
 }

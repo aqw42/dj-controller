@@ -5,7 +5,7 @@
  * Author: gurbrinder grewal
  * Modified by Arduino LLC (2015)
  */ 
-
+#include <Arduino.h>
 #include "MIDIUSB.h"
 #include "Midi.h"
 
