@@ -9,8 +9,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("Button value : ");
-  Serial.println(control.button(0));
-  Serial.println(control.potentiometer(15));
+  Serial.println(control.potentiometer(0));
+  Serial.println(control.potentiometer(1));
   delay(100);
 }
